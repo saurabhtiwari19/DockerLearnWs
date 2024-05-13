@@ -5,7 +5,7 @@ services:
       target: development
     ports:
       - 8080:8080
-      - 8000:8000
+      - 8998:8998
     depends_on:
       db:
         condition: service_healthy
