@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "devsupport.fullname" . }}:{{ .Values.service.nodeport }}']
+      args: ['{{ include "devsupport.fullname" . }}:{{ .Values.service.NodePort }}']
   restartPolicy: Never
